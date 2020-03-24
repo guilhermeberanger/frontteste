@@ -35,7 +35,7 @@ document.addEventListener("DOMContentLoaded", function () {
               
                document.getElementById("myForm").innerHTML }}
 
-        request.open('POST', "http://localhost:9000/.netlify/functions/correios");
+        request.open('POST', "https://app.netlify.com/sites/adoring-lewin-4ef470/functions/braspres");
         request.setRequestHeader('Access-Control-Allow-Origin', '*');
         request.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
         request.setRequestHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
