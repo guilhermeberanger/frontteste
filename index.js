@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const request = new XMLHttpRequest();
 
-        request.open('POST', "http://localhost:9000/.netlify/functions/braspres");
+        request.open('POST', "https://adoring-lewin-4ef470.netlify.com/.netlify/functions/braspres");
         request.setRequestHeader('Access-Control-Allow-Origin', '*');
         request.setRequestHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
         request.setRequestHeader('Access-Control-Allow-Headers', 'Access-Control-Allow-Headers, Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers');
