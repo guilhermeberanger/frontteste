@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", function () {
         request.onload = function () {
             console.log(request.responseText)
         }
-        //console.log(centralFrete)
+        
         request.send(JSON.stringify(objeto));
 
 
