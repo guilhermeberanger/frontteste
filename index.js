@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
         const request = new XMLHttpRequest();
 
         request.open('POST', "http://localhost:9000/.netlify/functions/braspres");
-        request.setRequestHeader('Content-Type', 'application/json', 'charset=UTF-8, Access-Control-Allow-Origin, *');
+        request.setRequestHeader('Content-Type', 'application/json', 'charset=UTF-8', 'Access-Control-Allow-Origin', '*', 'origin');
         request.onload = function () {
             console.log(request.responseText)
         }
