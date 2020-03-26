@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const url = 'http://localhost:9000/.netlify/functions/braspres'
 
-        fetch('http://localhost:9000/.netlify/functions/braspres', {
+        fetch('https://adoring-lewin-4ef470.netlify.com/.netlify/functions/braspres', {
             method: 'POST',
             headers: new Headers({
                 'access-control-allow-origin': '*',
