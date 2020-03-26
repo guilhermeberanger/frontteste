@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         const url = 'http://localhost:9000/.netlify/functions/braspres'
 
-        fetch('http://localhost:9000/.netlify/functions/braspres', {
+        fetch('https://app.netlify.com/sites/adoring-lewin-4ef470/functions/braspres', {
             method: 'POST',
             headers: new Headers({
                 'access-control-allow-origin': '*',
@@ -42,7 +42,5 @@ document.addEventListener("DOMContentLoaded", function () {
             //.catch(error => console.error('Error:', error))
             .then(response => console.log('Success:', JSON.stringify(response)))
             .catch(error => console.error('Error:', error))
-
-
     });
 });
