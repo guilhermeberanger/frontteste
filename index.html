@@ -4,65 +4,41 @@
 
 
 <head>
-    <link rel="stylesheet" media="all" />
-    <script src="index.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-
+  <link rel="stylesheet" media="all" />
+  <script src="index.js"></script>
+  <link rel="stylesheet" type="text/css" href="css.css" media="screen" />
 
 </head>
 
 
-<body>
+<body class="body">
+  <div class="container">
 
+    <h1 class="titulo">Consulta de Frete</h1>
 
-    <form name="meu_form" action="javascript: enviar();" method="POST" id="myForm">
-
-        <h1>Consulta de Frete</h1>
-
-        <p class=".js-input-cepOrigem">
-            <input type="text" id="cepOrigemID" placeholder="00000000" required="required" name="Cep Origem"  value="01123010"/>
-            <label for="Cep Origem">Cep Origem</label>
-        </p>
-        <p class="js-input-cepDestino">
-            <input type="text" id="cepDestinoID" placeholder="00000000" required="required" name="Cep Destino"  value="40020160"/>
-            <label for="Cep Destino">Cep Destino</label>
-        </p>
-        <p class="nome">
-            <input type="text" id="tipoCargaId" placeholder="Carga / Envio" name="Tipo de Carga" />
-            <label for="Tipo de Carga">Tipo de Carga</label>
-        </p>
-        <p class="nome">
-            <input type="text" id="valorDeclaradoId" placeholder="Valor Declarado - R$" name="Valor Declarado" value="96" />
-            <label for="Valor Declarado">Valor Declarado</label>
-        </p>
-        <p class="nome">
-            <input type="text" id="volumeID" placeholder="Caixa/Envelope/Rolo/Prisma - R$" name="Volume" />
-            <label for="Volume">Volume</label>
-        </p>
-        <p class="nome">
-            <input type="text" id="comprimentoId" placeholder="Comprimento - Cm" name="Comprimento" />
-            <label for="Comprimento">Comprimento</label>
-        </p>
-        <p class="nome">
-            <input type="text" id="alturaId" placeholder="Altura - Cm" name="Altura" />
-            <label for="Altura">Altura</label>
-        </p>
-        <p class="nome">
-            <input type="text" id="larguraId" placeholder="Largura - Cm" name="Largura" />
-            <label for="Largura">Largura</label>
-        </p>
-        <p class="nome">
-            <input type="text" id="pesoId" placeholder="Peso - Kg" name="Peso" value="9" />
-            <label for="Peso">Peso</label>
-        </p>
-        <p>
-            <textarea placeholder="Observações"></textarea>
-        </p>
-        <p class="submit">
-            <input type="submit" value="Enviar" />
-        </p>
-
+    <form action="#" class="form-contact" tabindex="1" name="meu_form" action="javascript: enviar();" method="POST" id="myForm">
+      <input type="text" class="form-contact-input" name="cepOrigem" placeholder="Cep Destino" id="cepDestinoID"
+        required />
+      <input type="text" class="form-contact-input" name="valorNf" placeholder="Valor da Nota Fiscal"
+        id="valorDeclaradoId" required />
+      <select id="volumeID" class="form-contact-input">
+        <option value="Rolo">Rolo</option>
+        <option value="Caixa">Caixa</option>
+        <option value="Envelope">Envelope</option>
+      </select>
+      <input type="text" class="form-contact-input" name="Comprimento" placeholder="Comprimento" id="comprimentoId"
+        required />
+        <input type="text" class="form-contact-input" name="Altura" placeholder="Altura" id="alturaId"
+        required />
+        <input type="text" class="form-contact-input" name="Largura" placeholder="Largura" id="larguraId"
+        required />
+        <input type="text" class="form-contact-input" name="Peso" placeholder="Peso" id="pesoId"
+        required />
+        <input type="text" class="form-contact-input" name="quantidade" placeholder="Quantidade" id="quantidadeId"
+        required />      
+      <button type="submit" class="form-contact-button" value="Enviar">Enviar</button>
     </form>
+  </div>
 
 </body>
 
